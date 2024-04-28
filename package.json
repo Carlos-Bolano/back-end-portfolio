@@ -9,7 +9,7 @@
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
-  "author": "",
+  "author": "Carlos Bolaño",
   "license": "ISC",
   "dependencies": {
     "cors": "2.8.5",
