@@ -4,12 +4,15 @@ import morgan from "morgan";
 
 import routes from "./routes/people.routes.js";
 import { FRONTEND_URI } from "./config.js";
+import { middleware } from "./middleware/index.js";
 
 const app = express();
 
+app.use(middleware);
+
 app.use(
   cors({
-    origin: FRONTEND_URI || "http://localhost:4321"
+    origin: FRONTEND_URI || "http://localhost:4321",
   })
 );
 app.use(morgan("dev"));
