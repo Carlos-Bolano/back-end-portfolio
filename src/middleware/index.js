@@ -1,4 +1,4 @@
-import { FRONTEND_URI } from "../config";
+import { FRONTEND_URI } from "../config.js";
 
 export const middleware = (req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", FRONTEND_URI);
