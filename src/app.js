@@ -9,7 +9,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: FRONTEND_URI || "http://localhost:4321",
+    origin: [FRONTEND_URI || "http://localhost:4321"],
   })
 );
 app.use(morgan("dev"));
